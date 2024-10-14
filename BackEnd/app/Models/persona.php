@@ -7,6 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class persona extends Model
 {
+    public $timestamps = false;
     use HasFactory;
-    protected $fillable = ['NOMBRES', 'AP_PATERNO', 'AP_MATERNO', 'FECHA_NACIMIENTO'];
+    protected $table = "Persona";
+    protected $fillable = [
+        'ID_PERSONA',
+        'NOMBRES',
+        'AP_PATERNO',
+        'AP_MATERNO',
+        'CORREO_ELECTRONICO',
+        'FECHA_NACIMIENTO',
+        'TELEFONO'
+    ];
 }

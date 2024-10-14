@@ -19,8 +19,8 @@ return new class extends Migration {
             $table->string('CORREO_ELECTRONICO', 80)->nullable();
             $table->integer('TELEFONO')->nullable();
             $table->integer('ID_GENERO')->nullable();
-
             $table->primary(['ID_PERSONA'], 'xpkpersona');
+            $table->timestaps();
         });
     }
 
