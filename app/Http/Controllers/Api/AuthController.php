@@ -7,5 +7,7 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
-    //
+    public function register(Request $request){
+        return response()->json($request, 200); //response::json
+    }
 }

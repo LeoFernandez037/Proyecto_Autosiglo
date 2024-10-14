@@ -13,8 +13,8 @@ Route::prefix('v1')->get(function () {
     // ruta publica
     Route::get('/public/{slug}', [FrontController::class,'categoria']) ;
     // Login y register
-    Route::get('/auth/register', [AuthController::class,'register']) ;
-    Route::get('/auth/login', [AuthController::class,'login']) ;
+    Route::post('/auth/register', [AuthController::class,'register']) ;
+    Route::post('/auth/login', [AuthController::class,'login']) ;
 
 
     // ruta privada

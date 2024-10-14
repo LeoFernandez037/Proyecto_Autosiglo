@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(94deg, #B53300, #f6925c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auto_derecha {
+    position: fixed;
+    bottom: 0;
+    right: -110px;
+    width:850px;
+    height: auto;
+    z-index: -1;
+}
+
+.auto_izquierda {
+    position: fixed;
+    bottom: 0;
+    left: -120px;
+    width: 850px;
+    height: auto;
+    z-index: -1;
+}
+
+.login-container {
+    background-color: #ffffff7d;
+    border-radius: 10px;
+    text-align: center;
+    height: 450px;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: #ff5e57;
+    font-size: 35px;
+    position: relative;
+    top: 30px;
+    left: 120px;
+}
+
+.icon-link:hover {
+    color: #ff0000;
+}
+
+h1 {
+    color: #ff5e57;
+    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+}
+
+p {
+    color: #000000;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+.login-box input {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 260px;
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 7px;
+}
+
+.login-box input::placeholder {
+    color: #FF6060;
+}
+
+.login-box button {
+    background-color: #FF6060;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 45px;
+    width: 200px;
+}
+
+.login-box button:hover {
+    background-color: #ff0000;
+}
